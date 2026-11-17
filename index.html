@@ -31,13 +31,13 @@
 .phone-home{position:absolute;bottom:5px;left:50%;transform:translateX(-50%);width:110px;height:4px;background:#39303b;border-radius:20px}
 @media(max-width:480px){.section{padding:52px 0}.phone-stage{padding:12px 0;background:transparent}.phone-device{height:min(760px,82vh);border-width:6px;border-radius:38px}.phone-screen{border-radius:28px}.container{padding:0 15px}.phone-screen .formGrid{grid-template-columns:1fr 1fr}.phone-screen .field select{padding:10px 5px;font-size:12px}}
 
-.phones-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;width:100%;max-width:760px;justify-items:center}
+.phones-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;width:100%;max-width:650px;justify-items:center}
 .phone-column{width:100%;display:flex;align-items:center;flex-direction:column;min-width:0}
 .phone-label{text-align:center;margin:0 0 16px;display:flex;flex-direction:column;gap:2px}
 .phone-label strong{font-size:18px;color:#3d263b}
 .phone-label span{font-size:12px;color:#846c7e}
-.phones-grid .phone-device{width:320px;max-width:100%;height:625px;border-width:7px;border-radius:42px}
-.phones-grid .phone-screen{border-radius:30px}
+.phones-grid .phone-device{width:280px;max-width:100%;height:clamp(340px,78svh,520px);border-width:7px;border-radius:36px}
+.phones-grid .phone-screen{border-radius:24px}
 .phones-grid .phone-camera{top:10px;width:85px;height:17px}
 .phones-grid .phone-screen .appHeader{padding:15px 13px}
 .phones-grid .phone-screen .appHeader h3{font-size:16px!important;line-height:1.3}
@@ -47,7 +47,8 @@
 .phones-grid .phone-screen .field select{font-size:11px;padding:9px 5px}
 .phones-grid .phone-screen .field{font-size:11px}
 .phones-grid .phone-screen .btn{font-size:11px;padding:9px 10px}
-.phones-grid .phone-tabs{height:57px}
+.phones-grid .phone-tabs{height:50px}
+.phones-grid .pro-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}
 .entrepreneur-scroll{flex:1;overflow-y:auto;min-height:0;background:#fffafc}
 .pro-welcome{padding:18px 15px 14px;background:linear-gradient(130deg,#fce4ef,#f6eaf9)}
 .pro-welcome small{color:#a54a76;font-weight:800;font-size:9px;letter-spacing:1px}
@@ -68,7 +69,7 @@
 .pro-booking button{border:1px solid #e6c8d8;border-radius:9px;background:#fff4f9;color:#9a426d;padding:7px;font-size:10px;font-weight:700;margin-top:6px}
 .pro-slot{display:flex;align-items:center;justify-content:space-between;padding:9px;margin:7px 0;border:1px solid #efdbe4;border-radius:10px;background:white;font-size:12px}
 .pro-slot button{background:#fff;border:0;color:#bd416c;font-size:12px}
-@media(max-width:700px){.phones-grid{grid-template-columns:1fr;gap:32px}.phones-grid .phone-device{width:320px;height:625px}.phone-stage{padding:24px 6px}.phone-label{margin-top:8px}}
+@media(max-width:700px){.phones-grid{grid-template-columns:1fr;gap:32px}.phone-stage{padding:24px 6px}.phone-label{margin-top:8px}}
 </style></head><body>
 <header><div class="container"><nav><a href="#inicio" class="logo">bely<span style="color:#6e4a78">.</span></a><div class="navlinks"><a href="#solucao">Solução</a><a href="#canvas">Lean Canvas</a><a href="#mvp">MVP</a><a href="#avaliacoes">Avaliações</a><a href="#financeiro">Financeiro</a><a href="#materiais">Materiais</a></div><a class="btn" href="#mvp">Testar MVP ↗</a></nav></div></header>
 <main><section class="hero" id="inicio"><div class="container heroGrid"><div><div class="eyebrow">Startup de beleza · Projeto de Empreendedorismo</div><h1>Sua beleza,<br><em>no seu tempo.</em></h1><p class="lead">Encontre serviços de beleza, compare preços, consulte horários e simule seu agendamento em um só lugar.</p><div class="actions"><a class="btn" href="#mvp">Experimentar protótipo →</a><a class="btn secondary" href="#canvas">Conhecer o negócio</a><a class="btn secondary" href="pitch.html">Mostrar em PPT ↗</a></div><p class="small">Encontre. Agende. Cuide-se. · MVP acadêmico demonstrativo</p></div><div class="heroCard"><div class="miniTop"><strong>Seu próximo momento de autocuidado ✨</strong><span class="pill">Agenda demo</span></div><div class="sample"><div class="avatar">💅</div><div><b>Manicure e esmaltação</b><small>Campinas · a partir de R$ 45</small></div><span style="margin-left:auto">↗</span></div><div class="sample"><div class="avatar">💇‍♀️</div><div><b>Corte e escova</b><small>Limeira · a partir de R$ 70</small></div><span style="margin-left:auto">↗</span></div><div class="sample"><div class="avatar">✨</div><div><b>Design de sobrancelhas</b><small>Campinas · a partir de R$ 35</small></div><span style="margin-left:auto">↗</span></div><p class="small">Exemplos ilustrativos, sem profissionais reais cadastrados.</p></div></div></section>
