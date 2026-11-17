@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bely · Pitch de 5 minutos</title>
+<link rel="preload" as="image" href="demo-bely.gif">
+<style>
+:root{font-family:system-ui,sans-serif;color:#281a2b;background:#fff6fa}*{box-sizing:border-box}body{margin:0}button,a{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.45}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #ed71a5;outline-offset:4px}[hidden]{display:none!important}
+.stage{position:relative;min-height:100svh;display:flex;flex-direction:column;background:#fff6fa}.stage:fullscreen{overflow:auto}.stage:has(.slide.dark:not([hidden])){background:#281a2b;color:#fff6fa}.top,.controls{display:flex;align-items:center;justify-content:space-between;gap:.7rem;flex-wrap:wrap;padding:1rem clamp(1.25rem,5.6vw,6rem);z-index:1}.brand{font:bold 2rem Georgia,serif;text-decoration:none}.actions,.navigation{display:flex;gap:.55rem;align-items:center;flex-wrap:wrap}.pill{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:.5rem .85rem;border:1px solid currentColor;border-radius:999px;color:inherit;background:transparent;text-decoration:none;font-size:.88rem}.primary{background:#a63367;color:white;border-color:#a63367}.slide{width:100%;flex:1;display:grid;align-items:center;padding:clamp(1rem,4vh,4rem) clamp(1.25rem,5.6vw,6rem);max-width:1680px;margin:auto}.split{grid-template-columns:minmax(0,1fr) minmax(235px,30%);gap:clamp(1rem,5vw,7rem)}.label{font-weight:750;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:#a63367;margin:0 0 1.1rem}.dark .label{color:#ff9bbf}h1{font:700 clamp(2.6rem,6.4vw,7rem)/.99 Georgia,serif;letter-spacing:-.055em;margin:0;text-wrap:balance}h1:focus{outline:none}.lead{font-size:clamp(1.1rem,2.2vw,2.2rem);line-height:1.35;max-width:35ch;margin:1.4rem 0 0;color:#624656}.dark .lead{color:#f1d7e5}.cards{display:flex;flex-wrap:wrap;gap:1rem;margin-top:clamp(1.2rem,5vh,5rem)}.card{flex:1 1 260px;max-width:570px;background:#f6e0eb;padding:clamp(1rem,2vw,2rem);border-radius:1.25rem}.dark .card{background:#43283e}.card strong{color:#a63367;font-size:clamp(1.05rem,1.7vw,1.7rem)}.dark .card strong{color:#ff9bbf}.card p{margin:.5rem 0 0;font-size:clamp(1rem,1.4vw,1.45rem)}ol{padding-left:1.5rem;font-size:clamp(1rem,1.6vw,1.5rem);line-height:1.65}
+figure{margin:0;display:grid;justify-items:center;padding:1rem;border-radius:2rem;background:#f3d9e7}.dark figure{background:#533048}figure img{width:auto;max-width:100%;max-height:min(65svh,660px);object-fit:contain;border-radius:1.2rem}.controls{margin-top:auto}.progress{display:flex;align-items:center;gap:.8rem;font-variant-numeric:tabular-nums}progress{width:clamp(4rem,13vw,12rem);height:.5rem;accent-color:#db6799}.notes{background:#fff6fa;color:#281a2b;padding:1rem clamp(1.25rem,5.6vw,6rem) 1.5rem}.notes p{max-width:85ch;line-height:1.55;margin:.55rem 0 0}
+@media(max-width:670px){.split{grid-template-columns:1fr}.slide{align-content:center}figure img{max-height:48svh}.top,.controls{padding-block:.65rem}.top .pill{padding-inline:.65rem}}
+</style></head>
+<body>
+<main class="stage" id="stage">
+<header class="top"><a class="brand" href="./" aria-label="Voltar ao site do Bely">bely.</a><div class="actions"><a class="pill" href="bely-pitch.pptx" download>Baixar PowerPoint</a><button class="pill" id="notesButton" aria-expanded="false" aria-controls="notes">Roteiro</button><button class="pill" id="fullscreen">Tela cheia</button></div></header>
+<section class="slide dark split" aria-labelledby="slide-0"><div class="content"><p class="label">Abertura</p><h1 id="slide-0" tabindex="-1">Sua beleza,<br>no seu tempo.</h1><p class="lead">O Bely conecta quem quer agendar um serviço de beleza a quem tem horário para atender.</p></div><figure><img src="bely-capa.png" alt="Tela de busca do Bely"></figure></section>
+<section class="slide" aria-labelledby="slide-1" hidden><div class="content"><p class="label">Problema</p><h1 id="slide-1" tabindex="-1">Quanto custa um horário vazio?</h1><p class="lead">Para a cliente, mensagens e espera. Para o salão, tempo na agenda que passa sem virar atendimento.</p><div class="cards"><div class="card"><strong>Cliente</strong><p>Preço e horários espalhados entre conversas.</p></div><div class="card"><strong>Salão</strong><p>Agendamentos manuais, conflitos e horários vagos.</p></div></div></div></section>
+<section class="slide split" aria-labelledby="slide-2" hidden><div class="content"><p class="label">Demonstração do MVP</p><h1 id="slide-2" tabindex="-1">Da busca à agenda.</h1><p class="lead">Acompanhe a mesma reserva nas telas da cliente e do salão.</p><ol><li>Buscar manicure em Campinas</li><li>Escolher horário e confirmar</li><li>Ver a reserva na agenda do salão</li><li>Ajustar a disponibilidade</li></ol></div><figure><img data-demo="demo-bely.gif" src="bely-capa.png" alt="Fluxo demonstrativo de busca, escolha do horário, confirmação, agenda e disponibilidade"></figure></section>
+<section class="slide" aria-labelledby="slide-3" hidden><div class="content"><p class="label">Pesquisa de campo</p><h1 id="slide-3" tabindex="-1">17 de 20 salões<br>aprovaram a proposta.</h1><p class="lead">85% de aprovação na pesquisa do projeto.</p><div class="cards"><div class="card"><strong>Próximo teste</strong><p>Medir reservas concluídas e uso recorrente no piloto.</p></div></div></div></section>
+<section class="slide" aria-labelledby="slide-4" hidden><div class="content"><p class="label">Modelo de negócio</p><h1 id="slide-4" tabindex="-1">Receita por atendimento.</h1><p class="lead">Começamos por Campinas e Limeira, onde queremos validar o uso e a aquisição de salões.</p><div class="cards"><div class="card"><strong>Gratuito</strong><p>10% por reserva concluída, sem mensalidade.</p></div><div class="card"><strong>Impulsionar</strong><p>R$ 100/mês + 5% por reserva concluída, com destaque patrocinado.</p></div></div></div></section>
+<section class="slide dark" aria-labelledby="slide-5" hidden><div class="content"><p class="label">Proposta de captação</p><h1 id="slide-5" tabindex="-1">R$ 450 mil por 15%.</h1><p class="lead">Meta total de uma rodada coletiva com aportes por etapas.</p><div class="cards"><div class="card"><strong>Primeira etapa · R$ 150 mil</strong><p>Colocar o produto em operação, validar pagamentos e iniciar a aquisição de salões.</p></div><div class="card"><strong>Etapas seguintes · até R$ 300 mil</strong><p>Aportes condicionados a reservas concluídas, salões ativos, retenção e custo de aquisição.</p></div></div></div></section>
+<footer class="controls"><div class="progress"><span id="position" aria-live="polite">1 / 6</span><progress id="progress" max="6" value="1" aria-label="Progresso da apresentação"></progress></div><div class="navigation"><button class="pill" id="previous" disabled>← Anterior</button><button class="pill primary" id="next">Próximo →</button></div></footer>
+<div class="notes" id="notes" hidden><strong id="timing"></strong><p id="speech"></p></div>
+</main>
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+const notes=[["0:00–0:30", "Imagine que você quer fazer as unhas amanhã. Você manda uma mensagem, espera a resposta, pede o preço e descobre que o horário já foi preenchido. Do outro lado, um salão pode ter uma vaga e não conseguir divulgá-la a tempo. O Bely aproxima os dois: a cliente vê preço e disponibilidade no mesmo lugar em que agenda."], ["0:30–1:10", "Para a cliente, encontrar alguém que faça o serviço é só o começo. Ela ainda precisa confirmar o preço, descobrir os horários e combinar a reserva. O salão repete esse atendimento em várias conversas ao longo do dia, enquanto também presta os serviços. Uma desistência de última hora abre um horário que pode nem chegar a quem está procurando. A oportunidade que vimos foi mostrar a disponibilidade no momento da busca."], ["1:10–2:25", "Esta é uma gravação do protótipo com dados demonstrativos. A Ana Paula quer fazer as unhas em Campinas. Ela filtra a busca e vê opções com preço. Escolhe o Studio Rosa, abre os horários e seleciona 9h. Observe a confirmação da reserva na tela da cliente. Agora mudamos para o lado do salão. O atendimento aparece na agenda, de onde o profissional pode acompanhar a reserva. A última tela mostra como o profissional pode adicionar horários e bloquear datas. O ponto é que a mesma disponibilidade ajuda a cliente a decidir e dá ao salão uma agenda para administrar. No piloto, vamos medir quantas buscas chegam até uma reserva e quantas reservas viram atendimentos."], ["2:25–3:05", "Apresentamos a proposta a 20 salões. Dezessete reagiram favoravelmente, o que dá 85% de aprovação nessa amostra. Isso mede a recepção à proposta. No piloto, vamos observar quantos salões efetivamente entram, mantêm horários disponíveis e recebem reservas. Depois vamos acompanhar quantos continuam ativos e quantos atendimentos são concluídos. Esses dados vão orientar a expansão."], ["3:05–4:05", "O plano gratuito permite começar sem mensalidade. Numa reserva concluída de 80 reais, o Bely recebe oito reais. Para quem quer mais visibilidade, o Impulsionar prevê 100 reais por mês e uma comissão menor, de 5%. Nessa mesma reserva, seriam quatro reais de comissão, além da mensalidade. A ideia é começar em Campinas e Limeira. Precisamos ter oferta e procura na mesma região para que a cliente encontre opções e o salão receba reservas. Vamos acompanhar o custo de atrair salões e clientes, a frequência de uso e a adesão ao plano pago antes de investir em outras cidades."], ["4:05–5:00", "Nossa proposta acadêmica é captar 450 mil reais no total por 15% da empresa, com espaço para mais de um investidor. Começamos com uma primeira etapa de 150 mil reais para colocar o produto em operação, validar pagamentos e testar a aquisição de salões. Os aportes seguintes dependeriam dos resultados do piloto. O que buscamos é um parceiro que possa ajudar a transformar a aprovação da ideia em reservas concluídas e uso recorrente. Quem quer ajudar a colocar o Bely nos primeiros salões?"]];
+const stage=document.getElementById('stage');
+const previous=document.getElementById('previous');
+const next=document.getElementById('next');
+const demo=document.querySelector('[data-demo]');
+const notesButton=document.getElementById('notesButton');
+const notesPanel=document.getElementById('notes');
+const fullscreen=document.getElementById('fullscreen');
+let current=0;
+function show(index, focus=false){
+  if(index<0||index>=slides.length)return;
+  const onDemo=slides[index].contains(demo);
+  if(onDemo && current!==index) demo.src=demo.dataset.demo;
+  if(!onDemo && slides[current].contains(demo)) demo.src='bely-capa.png';
+  current=index;
+  slides.forEach((slide,i)=>slide.hidden=i!==index);
+  previous.disabled=index===0;
+  next.disabled=index===slides.length-1;
+  document.getElementById('position').textContent=(index+1)+' / '+slides.length;
+  document.getElementById('progress').value=index+1;
+  document.getElementById('timing').textContent=notes[index][0];
+  document.getElementById('speech').textContent=notes[index][1];
+  if(focus){slides[index].querySelector('h1').focus({preventScroll:true});window.scrollTo(0,0);}
+}
+previous.addEventListener('click',()=>show(current-1,true));
+next.addEventListener('click',()=>show(current+1,true));
+notesButton.addEventListener('click',()=>{
+  notesPanel.hidden=!notesPanel.hidden;
+  notesButton.setAttribute('aria-expanded',String(!notesPanel.hidden));
+  if(!notesPanel.hidden) notesPanel.scrollIntoView({block:'nearest'});
+});
+fullscreen.hidden=!document.fullscreenEnabled;
+fullscreen.addEventListener('click',async ()=>{
+  if(document.fullscreenElement)await document.exitFullscreen();
+  else await stage.requestFullscreen();
+});
+document.addEventListener('fullscreenchange',()=>{
+  fullscreen.textContent=document.fullscreenElement?'Sair da tela cheia':'Tela cheia';
+});
+document.addEventListener('keydown',event=>{
+  if(event.altKey||event.ctrlKey||event.metaKey||event.shiftKey)return;
+  const offsets={ArrowRight:1,ArrowLeft:-1,PageDown:1,PageUp:-1};
+  if(event.key in offsets){
+    event.preventDefault();
+    show(current+offsets[event.key],true);
+  }else if(event.code==='Space'&&!event.target.closest('button,a')){
+    event.preventDefault();
+    show(current+1,true);
+  }
+});
+show(0);
+</script>
+</body></html>
